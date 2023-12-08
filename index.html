@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+    	    background-color: #030226;
+            font-family: 'Evafiya Script';
+            color: #fbf5ef;
+    	    font-size: 24px;
+        }
+
+        #left-side {
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+            height: 100vh;
+            align-items: center;
+    	    background-color: #030226;
+        }
+
+        #left-side img {
+            max-height: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #right-side {
+            flex: 1;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+
+        #top-half {
+            flex: 1;
+            position: sticky;
+            top: 0;
+            background-color: #030226;
+            z-index: 1; /* Ensure it's stacked above the scrolling content */
+        }
+
+        @font-face {
+            font-family: 'Dancing Script';
+            src: url('DancingScript.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'PlayfairDisplay_Italic Script';
+            src: url('PlayfairDisplay-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'PlayfairDisplay Script';
+            src: url('PlayfairDisplay.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    	@font-face {
+            font-family: 'Evafiya Script';
+            src: url('Evafiya.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #font1 {
+            font-family: 'Dancing Script', cursive;
+            color: #494d7e;
+    	    
+        }
+        #font2 {
+            font-family: 'PlayfairDisplay_Italic Script';
+    	    color: #f2d3ab;
+        }
+        
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        th, td {
+            border: 1px solid #030226;
+            text-align: left;
+            vertical-align: top;
+            padding: 8px;
+        }
+
+        th:nth-child(1), td:nth-child(1) {
+            width: 15%;
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+            width: 85%;
+        }
+
+        ul, ol {
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 0.25fr 0.25fr;
+            margin: 0;
+            padding: 0px;
+        }
+
+         a:link {
+            color: #494d7e;
+        }
+
+        a:visited {
+            color: #494d7e;
+        }
+
+        a:hover {
+            color: #f2d3ab;
+        }
+
+        a:active {
+            color: #fbf5ef;
+        }
+
+        h2 {
+            font-family: 'PlayfairDisplay Script';
+            color: #f2d3ab;
+        }
+
+    </style>
+    <title>Eva Gostiuk</title>
+</head>
+<body>
+    <div id="left-side">
+        <img src="2023-07-04 005.png">
+    </div>
+    <div id="right-side">
+	<div id="top-half" style={{position: sticky;}}>
+            <div id="font1" style="font-size: 80px;">Welcome!</div>
+            <div id="font2" style="font-size: 100px;">My name is Eva.</div><hr>
+	</div>
+    <div id="bottom-half">
+            <div id="Education">
+                <table>
+                    <tr>
+                        <td rowspan="5"><h2  >Education</h2></td>
+                        <td><br><br><b>Honours Mathematics </b><br> University of Ottawa<br> May 2020 – Current </td>
+                    </tr>
+                    <tr>
+                        <td><b>Honours Computer Science (Data Science) </b><br> University of Ottawa <br> May 2020 – Current </td>
+                    </tr>
+                    <tr>
+                        <td><b>Bachelor of Science Joint Honours in Computer Science and in Mathematics </b><br> University of Ottawa <br> September 2019 – May 2020 (changed program) </td>
+                    </tr>
+                    <tr>
+                        <td><b>Head Start Program - Special Student Undergraduate (Gifted Students)</b> <br> University of Ottawa  <br> January 2019 – August 2019</td>
+                    </tr>
+                    <tr>
+                        <td><b>Secondary School Diploma (graduated with Silver Medal)</b><br> Lisgar Collegiate Institute <br> September 2015 – May 2019</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Skills" >
+                <table>
+                    <tr>
+                        <td rowspan="3"><h2  >Skills</h2></td>
+                        <td><br><br><b>Natural Languages</b> 
+                            <ul>
+                                <li style="list-style: none;">English (Full professional proficiency)</li>
+                                <li style="list-style: none;">Ukrainian (Full professional proficiency)</li>
+                                <li style="list-style: none;">Russian (Full professional proficiency)</li>
+                                <li style="list-style: none;">French (Limited working proficiency)</li>
+                                <li style="list-style: none;">Italian (Limited working proficiency)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Programming Languages</b><br> Python, R, SQL, Java, HTML, CSS, Javascript, C, C++, C#, Prolog </td>
+                    </tr>
+                    <tr>
+                        <td><b>Other Skills</b>
+                            <ul>
+                                <li>Technical writing, presentation skills, time management skills, teamwork and leadership skills, problem-solving, critical analysis, attention to detail, creative skills</li>
+                                <li>Curriculum and activity planning, cultural awareness</li>
+                                <li>Video editing, graphic design, traditional and digital art, game development</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <p id="Projects"> </p>
+            <div>
+                <table>
+                    <tr>
+                        <td rowspan="6"><h2  >Projects</h2></td>
+                        <td><br><br><b>Honours Project (in progress) <br> <i>Title: “Detecting Persuasion Techniques In Online News”</i><br></b>  <i> Supervisor: Diana Inkpen <br></i> This project focuses on exploring ways of applying artificial intelligence to media analysis by creating different computational models capable of automatically identifying the persuasion techniques used in news articles published on the internet and analyzing the effects of different languages and contexts on the performance of the models.Moreover, a section of this honours project is dedicated to exploring the use of hypergraph representation of sentences to make the results of classification tasks more effective. </td>
+                    </tr>
+                    <tr>
+                        <td><b>MAT4376(Techniques of Data Analysis) Data Analysis Projects</b><br> <i> Supervisor: Patrick Boily </i> <br> This course was structured as a series of open-ended group projects which required obtaining insights from data using specific methodologies and additional context research and then presenting them in a creative visual way.<br> 
+                            <table>
+                                <tr>
+                                    <td style = "width: 5%;"></td>
+                                    <td style = "width: 15%;"><b><i>Anomaly Detection Project</i></b></td>
+                                    <td style = "width: 80%;">This project deliverable was an interactive journal that presented insights about anomalies in flights across the US and a comparison of result differences of various anomaly detection methodologies.<br><b> <a href="https://vivante.itch.io/mat4376-project4">Explore Interactive Deliverable</a>  <a href="https://github.com/EvaGostiuk/MAT4376-project-4-team-3">Github </a></b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 5%;"></td>
+                                    <td style = "width: 15%;"><b><i>Queueing Systems Project</i></b></td>
+                                    <td style = "width: 80%;">This project deliverable was a platformer game that presented insights about a queueing model of the screening process in US airports.<br><b> <a href="https://vivante.itch.io/flying-through-borealia-queueing-systems">Explore Interactive Deliverable</a>  <a href="https://github.com/EvaGostiuk/MAT4376-project-3-team-3">Github </a></b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 5%;"></td>
+                                    <td style = "width: 15%;"><b><i>Bayesian Analysis Project</i></b></td>
+                                    <td style = "width: 80%;">This project deliverable was a website with interactive graphs about the A/B testing of website layout based on conversion rate and analysis of emergency department hospital data with the goal of predicting the length of hospital stay.<br><b> <a href="https://evagostiuk.github.io/MAT4376_Project2/home.html">Explore Interactive Deliverable</a>  <a href="https://github.com/EvaGostiuk/MAT4376-project-2-team-3">Github </a></b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 5%;"></td>
+                                    <td style = "width: 15%;"><b><i>Data Visualization Project</i></b></td>
+                                    <td style = "width: 80%;">This project deliverable was an animated video analyzing and visualizing predictions about the 2016 US Election in relation to polling agencies' grade in FiveThirtyEight and the state of political sentiments at the time of polling. <br><b> <a href="https://youtu.be/-7cGPy3hSF4">Explore Video Deliverable</a>  <a href="https://github.com/EvaGostiuk/MAT4376-project-1-team-3">Github </a></b> </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>CSI4142 Data Science Project</b><br> <i>Instructor: Yazan Otoum</i><br>This project focused on the exploration of the association between air quality and various demographic and geographic factors in each state of the United States of America. </td>
+                    </tr>
+                    <tr>
+                        <td><b>CSI4107 Information Retrieval Projects</b><br> <i>Instructor: Diana Inkpen</i><br> This pair of projects focused on creating and optimizing an information retrieval system for a collection of text documents using both traditional methods based on inverted index and methods involving neural networks.</td>
+                    </tr>
+                    <tr>
+                        <td><b>CSI4103 Web Application Programming Project</b><br> <i>Instructor: David Knox</i><br> This project was an open-ended task focused on the development of a web application that could be used to user to gain insight from a large and remote data source. Project’s selected area focused on application helping with the exploration of scholarly publications during the initial research stages. It provided visualization of search history in a way that preserved journey connections between similar publications.</td>
+                    </tr>
+                    <tr>
+                        <td><b>ENG1112 Technical Research Report <br> <i>Title: “Data Mining Methods in Research and Their Construct in First-Order Logic”</i></b><br> <i>Instructor: Elena Illina</i><br>his report was written as a practical resource for people who need to analyze a large amount of raw data for their research. It provided a general overview of the data mining field. Then, it offered a description of how data mining techniques work and for which situations these methods are appropriate. This report also commented on the representation of central ideas of methods in first-order logic.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Experiences" >
+                <table>
+                    <tr>
+                        <td rowspan="5"><h2 >Leadership / Teaching Experience</h2></td>
+                        <td><br><br><b>Vice President of Graphic Design <br><i>Women in Mathematics Club at University of Ottawa</b><br> May 2020 – May 2021</i><br> I applied to be the VP of Graphic Design in a Women in Mathematics Club since I saw it as a chance to meet new people, learn and share experiences, and contribute to the community while merging my passion for mathematics with my digital art and graphic design skills.<br> Tasks Performed:
+                            <ul>
+                                <li>Creation of promotional materials such as posters, flyers, and banners for club events, meetings, and initiatives</li>
+                                <li>Creation of visual components of club merchandise</li>
+                                <li>Help with the organization of club meetings and activities</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Mathematics and Physics Tutor</b><br> <i>September 2018 – May 2019</i><br>  For people who needed more help, I performed one-on-one tutoring sessions in mathematics and physics. </td>
+                    </tr>
+                    <tr>
+                        <td><b>Club Head<br><i>"Survival in Wild Physics" Club at Lisgar Collegiate Institute</b><br>September 2018 – June 2019</i><br> I have initiated this club since I noticed the smaller interest in science and math among my peers. By committing to this project, I wanted to challenge this problem and create a non-stressful space to explore STEM subjects and their applications.<br>Tasks Performed:
+                            <ul>
+                                <li>Preparation of presentation materials and meeting activities</li>
+                                <li>Organization of tutoring sessions and study groups to help members with coursework or exam preparation</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Administrative Assistant to Academic Advisor<br><i>Ottawa-Carleton District School Board (OCDSB) / Ottawa-Carleton Education Network (OCENET)</b><br>August 2016 - September 2016</i><br> While volunteering at the OCENET, I welcomed and provided school information to new international students, supervised some of the assessments, and if students came to Lisgar Collegiate Institute, I helped them to adapt to the school community<br>Tasks Performed:
+                            <ul>
+                                <li>Photocopy of Student's documents</li>
+                                <li>Checking all documents to ensure that nothing is missing and organizing applicant’s files</li>
+                                <li>Supervising during exams for English and Math</li>
+                                <li>Assistant during program presentations for international students </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Assistant to the Coordinator of the Mathematics Camp<br><i>Bright Math Camp Inc. (University of Ottawa / Carleton University)</b><br>July 2015 - July 2015, July 2016 - July 2016</i><br> While volunteering at the Bright Math Camp, I was leading fun math-based activities that focused on getting younger children interested in mathematics and supervised groups of children during recess hours.<br>Tasks Performed:
+                            <ul>
+                                <li>Supervising for students during lectures in class</li>
+                                <li>Supervising during student’s free time activity</li>
+                                <li>Assistant to staff during an academic class activity</li>
+                                <li>Photocopy of education materials </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Awards">
+                <table>
+                    <tr>
+                        <td><h2 >Awards</h2></td>
+                        <td><br><table>
+                                <tr>
+                                    <td style = "width: 5%;"><b>2022 – </b></td>
+                                    <td><b>Ranked 2nd in Metroidvania Game Jam Competition #20 with a score of 4.181 under my online alias "Vivante"</b><br> Description: The main goal of the competition was to create a game within a month in a Metroidvania game genre. Ratings were based on the public vote. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2022 – </b></td>
+                                    <td><b>Dean’s Honour's List (University of Ottawa)</b><br> Description: The Dean's Honour List is determined each term. Only full-time students who have maintained a term grade point average (TGPA) of 8.5 or higher without any failures and who have completed at least 9 units with alphanumeric grades during the term will have their name placed on the Dean's Honour List.</td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2020 – </b></td>
+                                    <td><b>Dean’s Honour's List (University of Ottawa)</b><br> Description: The Dean's Honour List is determined each term. Only full-time students who have maintained a term grade point average (TGPA) of 8.5 or higher without any failures and who have completed at least 9 units with alphanumeric grades during the term will have their name placed on the Dean's Honour List.</td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2019 – </b></td>
+                                    <td><b>Dean’s Honour's List (University of Ottawa)</b><br> Description: The Dean's Honour List is determined each term. Only full-time students who have maintained a term grade point average (TGPA) of 8.5 or higher without any failures and who have completed at least 9 units with alphanumeric grades during the term will have their name placed on the Dean's Honour List.</td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2019 – </b></td>
+                                    <td><b>Silver Medal & Honour Roll Awards (Lisgar Collegiate Institute)</b><br> Description: Student shall have completed minimum graduation requirements for high school as set down by provincial education authorities and obtained credits in the following subject areas and courses listed with an overall average of not less than 90%. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2019 – </b></td>
+                                    <td><b>Sir Isaac Newton Exam Certificate of Distinction (University of Waterloo)</b><br> Description: The Sir Isaac Newton (SIN) Exam is a test of high school physics and is offered by the Department of Physics & Astronomy at the University of Waterloo to encourage the teaching of physics. Students participate from across Canada, the USA and abroad.</td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2018 – </b></td>
+                                    <td><b>Silver Medal & Honour Roll Awards (Lisgar Collegiate Institute)</b><br> Description: Student shall have completed minimum graduation requirements for high school as set down by provincial education authorities and obtained credits in the following subject areas and courses listed with an overall average of not less than 90%. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2018 – </b></td>
+                                    <td><b>Sir Isaac Newton Exam Certificate of Distinction (University of Waterloo)</b><br> Description: The Sir Isaac Newton (SIN) Exam is a test of high school physics and is offered by the Department of Physics & Astronomy at the University of Waterloo to encourage the teaching of physics. Students participate from across Canada, the USA and abroad.</td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2017 – </b></td>
+                                    <td><b>Silver Medal & Honour Roll Awards (Lisgar Collegiate Institute)</b><br> Description: Student shall have completed minimum graduation requirements for high school as set down by provincial education authorities and obtained credits in the following subject areas and courses listed with an overall average of not less than 90%. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 5%;"><b>2016 – </b></td>
+                                    <td><b>Silver Medal & Honour Roll Awards (Lisgar Collegiate Institute)</b><br> Description: Student shall have completed minimum graduation requirements for high school as set down by provincial education authorities and obtained credits in the following subject areas and courses listed with an overall average of not less than 90%. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2016 – </b></td>
+                                    <td><b>Intercultural Communication and Awareness Certificate (OCDSB)</b><br>Description: Awarded upon successful completion of “Intercultural Communication and Awareness Workshop” that helps students to understand and appreciate the complexities of culture and to develop cultural competencies. </td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2018 –</b></td>
+                                    <td><b>Grade 11 Computer Science Subject Award</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2017 –</b></td>
+                                    <td><b>Grade 10 Computer Studies Subject Award</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2016 –</b></td>
+                                    <td><b>Grade 9 Principles of Mathematics Subject Award</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Achievement in Mathematics</b></td> 
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Achievement in Drama</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 5%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Achievement in Science</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Achievement in Geography</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Achievement in History</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2015 –</b></td>
+                                    <td><b>Certificate of Honours</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2014 – </b></td>
+                                    <td><b>Certificate of Achievement in Mathematics</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2014 – </b></td>
+                                    <td><b>Certificate of Achievement in French</b></td>
+                                </tr>
+                                <tr>
+                                    <td style = "width: 7%;"><b>2014 – </b></td>
+                                    <td><b>Certificate of Honours</b></td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Extracurriculars" >
+                <table>
+                    <tr>
+                        <td rowspan="4"><h2  >Hobbies / Activities</h2></td>
+                        <td><br><br><b>Traditional and digital art</b> <br> My passion for digital and traditional art forms has allowed me to further develop my creative skills. I've built a diverse portfolio showcasing various artistic styles and mediums and had the opportunity to exhibit my digital art pieces online and collaborate with fellow artists. <br><b> <a href="https://www.instagram.com/eva_vivante_/">Dedicated digital art Instagram page</a>  <a href="https://fy.do/user/1766"> Art collaborations</a></b></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Game Development</b><br> I started game development because it is an exciting fusion of creativity and technical skills. I successfully designed and published a game that garnered positive feedback and downloads. Participating in game jams helped me keep honing my problem-solving and teamwork skills and abilities to prioritize and complete tasks under very tight deadlines. My latest successful project in this area was submission to Metroidvania Game Jam #20 (a game development competition whose main goal was to create a game in the Metroidvania genre within a month), where the project received second place based on the public vote. It was a group endeavour where I was responsible for world-building, tileset design and background art. <br>
+                        <b> <a href="https://vivante.itch.io/">Dedicated Itch.io page</a> <a href="https://itch.io/jam/metroidvania-month-20/rate/2118047"> Latest project </a> <a href="https://youtu.be/m0UU1uohMek"> Latest project (teaser video) </a></b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Constructed languages</b><br> I am a member of the community that focuses on constructing artificial languages (also more often referred to as conlangs). I've crafted several languages, each with its own grammar, vocabulary, and cultural context, enhancing my understanding of linguistics and world-building. These projects often enriched the lore sections of my game development projects.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Clubs</b><br> In addition to my primary extracurricular pursuits, I am an active member of the Women in Mathematics (WIM) Club and the Game Development Club at the University of Ottawa. In WIM, I've participated in many gatherings organized by the club and even helped organize a couple of events when I was an executive member of the club.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
