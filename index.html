@@ -72,11 +72,12 @@
         #font1 {
             font-family: 'Dancing Script', cursive;
             color: #494d7e;
-    	    
+            font-size: 11vh;
         }
         #font2 {
             font-family: 'PlayfairDisplay_Italic Script';
     	    color: #f2d3ab;
+            font-size: 15vh;"
         }
         
 
@@ -133,6 +134,39 @@
             color: #f2d3ab;
         }
 
+        @media (max-width: 1300px) {
+          #font2 {
+            font-size: 8vw;
+          }
+          #font1 {
+            font-size: 7vw;
+          }
+        }
+
+        @media (max-width: 1000px) {
+            #left-side{
+                height: 20.5vw;
+            }
+            body, h2{
+                font-size: 2.5vh;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #left-side{
+                width: 0vw;
+            }
+            #font2 {
+                font-size: 5vw;
+            }
+            #font1 {
+                font-size: 4vw;
+            }
+            body, h2{
+                font-size: 4vw;
+            }
+        }
+
     </style>
     <title>Eva Gostiuk</title>
 </head>
@@ -142,8 +176,8 @@
     </div>
     <div id="right-side">
 	<div id="top-half" style={{position: sticky;}}>
-            <div id="font1" style="font-size: 11vh;">Welcome!</div>
-            <div id="font2" style="font-size: 15vh;">My name is Eva.</div><hr>
+            <div id="font1">Welcome!</div>
+            <div id="font2">My name is Eva.</div><hr>
 	</div>
     <div id="bottom-half">
             <div id="Education">
